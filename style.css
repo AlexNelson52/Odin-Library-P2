@@ -65,12 +65,14 @@ td {
   right: 32px;
   width: 1rem;
   height: 1rem;
-  opacity: 0.3;
+  background-color: #1B4965;
+  color: red;
+  border: none;
 }
 
 .removeButton:hover {
-  background-color: red;
-  color: white;
+  background-color: #1B4965;
+  color: rgb(146, 5, 5);
   opacity: 1;
   border-radius: 5px;
   border: none;
@@ -116,8 +118,8 @@ td {
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid #34974d;
-  background-color: #3aa856;
+  border: 1px solid #1B4965;
+  background-color: #1B4965;
 }
 
 
@@ -129,7 +131,7 @@ td {
 
 .addBookButton .button__text {
   transform: translateX(30px);
-  color: #fff;
+  color: #BEE9E8;
   font-weight: 600;
 }
 
@@ -138,7 +140,7 @@ td {
   transform: translateX(109px);
   height: 100%;
   width: 39px;
-  background-color: #34974d;
+  background-color: #1B4965;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,11 +148,11 @@ td {
 
 .addBookButton .svg {
   width: 30px;
-  stroke: #fff;
+  stroke: #BEE9E8;
 }
 
 .addBookButton:hover {
-  background: #34974d;
+  background: #1B4965;
 }
 
 .addBookButton:hover .button__text {
@@ -163,9 +165,9 @@ td {
 }
 
 .addBookButton:active .button__icon {
-  background-color: #2e8644;
+  background-color: #1B4965;
 }
 
 .addBookButton:active {
-  border: 1px solid #2e8644;
+  border: 1px solid #1B4965;
 }
