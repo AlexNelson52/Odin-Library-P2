@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body,
+html {
+
+  background-color: #1B4965;
+  font-family: roboto;
+}
+
+.header {
+  background-color: #5FA8D3;
+  text-align: center;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: #BEE9E8;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  align-items: center;
+  text-decoration: underline;
+
+}
+
+.addBookButton {
+  height: 1.5rem;
+}
+
+.bookContainer {
+  background-color: #1B4965;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  text-align: center;
+
+}
+
+table {
+  text-align: center;
+  padding: .5%;
+  color: rgb(255, 255, 255);
+  font-family: roboto;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+th {
+  text-decoration: underline;
+  padding-bottom: 1.5%;
+
+}
+
+
+
+td {
+  color: #BEE9E8;
+  padding-bottom: 1.5%;
+  text-decoration: underline;
+}
+
+.removeButton {
+  right: 32px;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.3;
+}
+
+.removeButton:hover {
+  background-color: red;
+  color: white;
+  opacity: 1;
+  border-radius: 5px;
+  border: none;
+}
+
+
+.removeButton:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+.dialog-div {
+  min-height: 20%;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background: #5FA8D3;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: #0c574d;
+  font-family: roboto;
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.addBookButton {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+
+.addBookButton,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.addBookButton .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.addBookButton .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addBookButton .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.addBookButton:hover {
+  background: #34974d;
+}
+
+.addBookButton:hover .button__text {
+  color: transparent;
+}
+
+.addBookButton:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.addBookButton:active .button__icon {
+  background-color: #2e8644;
+}
+
+.addBookButton:active {
+  border: 1px solid #2e8644;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="resetsheet" href="reset.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="h1Header">Welcome to my Library</h1>
+    <button type="button" class="addBookButton">
+      <span class="button__text">Add a Book</span>
+      <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2"
+          stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg">
+          <line y2="19" y1="5" x2="12" x1="12"></line>
+          <line y2="12" y1="12" x2="19" x1="5"></line>
+        </svg></span>
+    </button>
+  </div>
+  <dialog open class="dialog-div">
+    <form method="dialog" id="userFormInput">
+      <div>
+        <label>Title: </label>
+        <input type="text" placeholder="Enter the book title" class="userBookTitle">
+      </div>
+      <div>
+        <label>Author: </label>
+        <input type="text" placeholder="Enter the Author's name" class="userAuthor">
+      </div>
+      <div>
+        <label>Number of pages:</label>
+        <input type="number" placeholder="Enter the Number of pages" class="userPages">
+      </div>
+      <div>
+        <label>Have you Ready the book?</label>
+        <input type="checkbox" class="userRead">
+      </div>
+      <div class="dialogButtons">
+        <button for="userFormInput" type="submit" class="dialogSubmit">Submit</button>
+        <button type="button" class="dialogButton">close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="bookContainer">
+    <table class="bookInfoTable">
+      <colgroup>
+        <col />
+      </colgroup>
+      <tr>
+        <div class="titleRow">
+          <th class="bookTitle">Title</th>
+          <th class="bookAuthor">Author</th>
+          <th class="bookPages">Number of Pages</th>
+          <th class="haveRead">Have you read?</th>
+          <th class="removeButton"> </th>
+        </div>
+      </tr>
+    </table>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
